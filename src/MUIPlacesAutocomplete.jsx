@@ -285,9 +285,11 @@ MUIPlacesAutocomplete.propTypes = {
   renderTarget: PropTypes.func.isRequired,
   createAutocompleteRequest: PropTypes.func,
   textFieldProps: PropTypes.object,
+  excludeTypes: PropTypes.array,
 }
 
 MUIPlacesAutocomplete.defaultProps = {
   createAutocompleteRequest: inputValue => ({ input: inputValue }),
   textFieldProps: { autoFocus: false, placeholder: 'Search for a place', fullWidth: true },
+  excludeTypes: null,
 }
